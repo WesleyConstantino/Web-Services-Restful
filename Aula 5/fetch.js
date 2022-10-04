@@ -6,6 +6,7 @@ then(resposta => resposta.json()).
 then(json => console.log(json)); 
 
 
+
 //cria novo post
 fetch('/posts', {
 method: 'POST',
@@ -20,6 +21,7 @@ headers: {
 }).
 then(resposta => resposta.json()).
 then(json => console.log(json)); 
+
 
 
 //Substitui os dados da postagem com id=3 (PUT)
@@ -37,3 +39,10 @@ headers: {
 }).
 then(resposta => resposta.json()).
 then(json => console.log(json)); 
+
+
+
+//Exclui a postagem postagem de id 3 (DELETE) 
+fetch('/posts/3',{
+   method: 'DELETE'}).
+then(resposta => resposta.json());
