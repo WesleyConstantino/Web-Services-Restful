@@ -21,3 +21,19 @@ headers: {
 then(resposta => resposta.json()).
 then(json => console.log(json)); 
 
+
+//Substitui os dados da postagem com id=3 (PUT)
+fetch('/posts/3', {
+method: 'PUT',
+body: JSON.stringify({
+     id: 3,
+     title: 'Não vale a pena!',
+     body: 'Há outros mais legais pelo mesmo preço!',
+     userId: 2
+}),
+headers: {
+   "Content-type": "application/json"
+   }
+}).
+then(resposta => resposta.json()).
+then(json => console.log(json)); 
