@@ -1,3 +1,5 @@
+//Testes realizados no endereço https://jsonplaceholder.typicode.com/
+
 //dá get no post de id 99
 fetch('/posts/99').
 then(resposta => resposta.json()).
