@@ -1,5 +1,15 @@
 //Testes realizados no endereço https://jsonplaceholder.typicode.com/
 
+//No site é possivel fazer testes com:
+// /posts	100 posts
+// /comments	500 comments
+// /albums	100 albums
+// /photos	5000 photos
+// /todos	200 todos
+// /users	10 users
+
+//No método "fetch" consultamos "fetch('/elemento/Id'". Ex: "fetch('/comments/451'", Pega o comentário de id 451. 
+
 //dá get no post de id 99
 fetch('/posts/99').
 then(resposta => resposta.json()).
